@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 $(window).scroll(function(){
     $(".rect").css("opacity", 1 - $(window).scrollTop() / 250);
-    $(".rect2").css("opacity", 3.5 - $(window).scrollTop() / 250);
+    //$(".rect2").css("opacity", 3.5 - $(window).scrollTop() / 250);
     /*$(".rect3").css("opacity", 1 - $(window).scrollTop() / 250);
     console.log($(window).scrollTop() - $(".rect2").parent().offset().top / 250);*/
 
