@@ -5,13 +5,14 @@
   <title>Katie Zhan's Website</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
   <div class="topnav" id="myTopNav">
       <a href="#home" class="smoothscroll" >Katie Zhan</a>
       <a href="#about" class="smoothscroll">About</a>
-      <a href="#LINKTORESUME!!!" target="_blank">Resume</a>
+      <!-- <a href="resume.pdf" target="_blank">Resume</a> -->
       <a href="#projects" class="smoothscroll">Projects</a>
       <a href="#contact" class="smoothscroll">Contact</a>
     </div>
@@ -29,8 +30,9 @@
     <div class="aboutme">
       <h3>About Me</h3>
       <div class="col1-me">
-        <div class="img-me">
-          <img src="me.PNG" alt="me" width="75" height="75" border-radius:100%>
+        <div id="my-img">
+          <img class="bottom" src="me.PNG" alt="me" width="75" height="75">
+          <img class="top" src="realme.jpg" alt="realme" width="75" height="75">
         </div>
       </div>
       <div class="col2-me">
@@ -51,6 +53,11 @@
         <i class="fa fa-facebook"></i>
       </a>
     </div>
+    <div class="resumepdf">
+      <p id="resumelink">
+        <a href="resume.pdf" target="_blank">Resume</a>
+      </p>
+    </div>
     </div>
    </div>
   </div>
@@ -61,7 +68,21 @@
     <h4>Projects</h4>
     <div class="col1-proj">
     </div>
+    <div class="col2">
     <div class="col2-proj">
+      <a href="HexClock/index.html" target="_blank">
+        <img src="hexcolor.jpg" alt="Hex Colour Clock" width="200" class="image">
+        <div class="overlay">
+          <div class="text">
+          <p>A web application of a precise hexadecimal colour clock that
+            goes the whole 24 hours colour range, from #000000 to #235959.
+          </p>
+          <i>HTML + CSS + Javascript</i>
+          </div>
+        </div>
+      </a>
+      </div>
+      <p>Hex Colour Clock</p>
     </div>
   </div>
 </div>
