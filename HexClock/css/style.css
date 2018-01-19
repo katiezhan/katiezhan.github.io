@@ -5,9 +5,12 @@
 
 body{
   font-family: roboto;
-  margin-top: 215px;
   text-align: center;
   color: white;
+}
+
+.content{
+  margin-top: 35vh;
 }
 
 #clock{

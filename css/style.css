@@ -26,7 +26,7 @@ html, body{
   color:#333;
   text-align: center;
   padding: 14px 16px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .topnav a:hover{
@@ -161,11 +161,22 @@ h5{
   font-size: 20px;
 }
 
-.col2-proj{
+.projectbox{
+  float: left;
+  width: 33.33%;
+  padding-left: 45px;
+}
+
+.projectbox p{
+  text-align: center;
+  padding-left: 30px;
+}
+
+.projtext{
   position: relative;
 }
 
-.col2 p{
+.projectbox p{
   font-family: lightfont;
   font-size: 20px;
 }
@@ -176,7 +187,7 @@ h5{
 }
 
 .rect3{
-  width: 200px;
+  height: 350px;
   border: 3px solid #eee;
   background-color: rgba(50, 50, 50, 0.5);
   padding: 30px 20px;
@@ -196,7 +207,7 @@ h5{
   color: #333;
 }
 
-.col2-proj:hover .overlay{
+.projtext:hover .overlay{
   opacity: 1;
 }
 
@@ -255,5 +266,58 @@ body{
   font-family: lightfont;
   text-align: center;
   color: black;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .rect3{
+    height: 75vh;
+    padding-top: 10px;
+  }
+
+  .projectbox {
+    float: none;
+    margin-left: 15px;
+	}
+
+  .projectbox img{
+    width: 100px;
+  }
+
+  .projectbox p{
+    text-align: center;
+  }
+
+  .overlay{
+    width: 101px;
+    height: 101px;
+  }
+
+  .text{
+    width: 100px;
+    height: 100px;
+  }
+
+  .text p{
+    font-size: 7px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .text i{
+    font-size: 7px;
+    margin-left: 5px;
+  }
+
+  .projtext a{
+    height: 100px;
+  }
+
+  .name{
+    padding: 0px;
+    margin: 0px;
+    margin-left: -20px;
+  }
 
 }

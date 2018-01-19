@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UFT-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>
+    Audio Visualizer
+  </title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div id="screen">
+    <div id="options">
+      <hr id="zero">
+      <label id="song"> pick a song
+  					<input type="file" id="thefile" accept="audio/*">
+  		</label>
+
+      <hr id="first">
+  	  <ul id="design">
+        <label>lines
+  		    <li><button id="line"></button></li>
+        </label>
+        <label>bars
+  		    <li><button id="bars"></button></li>
+        </label>
+        <label>double
+  		    <li><button id="double"></button></li>
+        </label>
+        <label>dots
+  		    <li><button id="dots"></button></li>
+        </label>
+  	  </ul>
+
+      <hr id="second">
+      <u1 id="bgcolor">
+        <label> dark
+          <li><button id="dark"></button></li>
+        </label>
+        <label> colour
+          <li><button id="colour"></button></li>
+        </label>
+      </u1>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <audio id="audio" controls></audio>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
