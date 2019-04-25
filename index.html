@@ -4,136 +4,244 @@
   <meta charset="UFT-8">
   <title>Katie Zhan</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="css/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="css/logo.png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
-<body>
-  <div class="topnav" id="myTopNav">
-      <a href="#home" class="smoothscroll" >Katie Zhan</a>
-      <a href="#about" class="smoothscroll">About</a>
-      <!-- <a href="resume.pdf" target="_blank">Resume</a> -->
-      <a href="#projects" class="smoothscroll">Projects</a>
-      <a href="#contact" class="smoothscroll">Contact</a>
-    </div>
-
-  <div class="bgimg-1" id="home">
-    <div class="rect">
-      <h1>Katie Zhan</h1>
-      <h2>UWaterloo CS</h2>
+<body onload="start(7)" onresize="alignHeader()">
+  <div class="welcome">
+    <h1 class="title typewriter">Hi, I'm Katie</h1>
+  </div>
+  <div class="rect">
+    <h2>UWaterloo CS - 2nd year</h2>
+    <div class="contact">  
+      <a href="tel:778-707-9288"><i class="fa fa-phone"></i></a>
+      <a href="mailto:rqzhan@uwaterloo.ca" target="_blank"><i class="fa fa-envelope-o"></i></a>
+      <a href="resume.pdf" target="_blank" class="resume">Resume</a>
+      <a href="https://github.com/katiezhan" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://linkedin.com/in/katiezhan" target="_blank"><i class="fa fa-linkedin"></i></a>
     </div>
   </div>
+  <div class="projectBanner">
+    <div class="project">
 
-<main>
-  <div class="bgimg-2" id="about">
-   <div class="rect2">
-    <div class="aboutme">
-      <h3>About Me</h3>
-      <div class="col1-me">
-        <div id="my-img">
-          <img class="bottom" src="me.PNG" alt="me" width="75" height="75">
-          <img class="top" src="realme.jpg" alt="realme" width="75" height="75">
+      <div class="projectHeader">
+        <h1 id="projectHeader">Projects</h1>
+      </div>
+
+      <div class="projectList">
+
+        <!-- MyAnimeHome -->
+        <div class="projectBox">
+          <div class="projectImage" id="topLeft">
+            <a href="#" onclick="openModal(7)">
+              <img src="img/googlehome.jpg">
+              <div class="overlay"></div>
+              <div class="overlayText fadeIn">
+                <h3>MyAnimeHome</h3>
+                <p>JavaScript, Dialogflow, Firebase, Jikan API</p>
+              </div>
+            </a>
+            <div class="modal" id="modal7">
+              <div class="close">
+                <a data-izimodal-close="">x</a>
+              </div>
+              <img src="img/animemod.jpg">
+              <div class="text">
+                <h2>MyAnimeHome</h2>
+                <h4>JavaScript + Dialogflow + Firebase + Jikan API</h4>
+                <p>A voice application available on Google Assistant or Google Home that allows users to conveniently check information about anime.</p>
+                <p>Current features include: checking what anime is airing on a certain date, top # anime of this season, what day a certain anime airs.</p>
+                <p>Leverages Jikan API to get information from MyAnimeList.</p>
+                <a href="https://github.com/Seantz12/MyAnimeHome" target="_blank"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col2-me">
-      <p>Welcome to my website! I'm Katie, a first year student currently in 1B
-         studying Computer Science at the University of Waterloo. I am an
-         inquisitive and eager learner with an interest in web design
-         and software development.
-      </p>
-    </div>
-    <div class="icons">
-      <a href="https://github.com/katiezhan" target="_blank">
-        <i class="fa fa-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/katiezhan" target="_blank">
-        <i class="fa fa-linkedin"></i>
-      </a>
-      <a href="https://facebook.com/kt.zhan" target="_blank">
-        <i class="fa fa-facebook"></i>
-      </a>
-    </div>
-    <div class="resumepdf">
-      <p id="resumelink">
-        <a href="resume.pdf" target="_blank">Resume</a>
-      </p>
-    </div>
-    </div>
-   </div>
-  </div>
-</main>
 
-<div class="bgimg-3" id="projects">
-  <div class="rect3">
-    <h4>Projects</h4>
-    <div class="projectbox">
-      <div class="projtext">
-        <a href="AudioVisualizer/index.html" target="_blank">
-          <img src="av.JPG" alt="Audio Visualizer" width="200" class="image">
-          <div class="overlay">
-            <div class="text">
-            <p> A web application that creates captivating animations based on the audio input.
-              Features 4 different animations and 2 different background choices.
-            </p>
-            <i>HTML + CSS + Javascript</i>
+        <!-- Athena AI -->
+        <div class="projectBox">
+          <div class="projectImage" id="topLeft">
+            <a href="#" onclick="openModal(6)">
+              <img src="img/athena.jpg">
+              <div class="overlay"></div>
+              <div class="overlayText fadeIn">
+                <h3>Athena AI</h3>
+                <p>React, JavaScript, Azure Text Analytics API, IBM Watson Speech to Text API</p>
+              </div>
+            </a>
+            <div class="modal" id="modal6">
+              <div class="close">
+                <a data-izimodal-close="">x</a>
+              </div>
+              <img src="img/athenamod.jpg">
+              <div class="text">
+                <h2>Athena AI</h2>
+                <h4>React + JavaScript + Azure Text Analytics API + IBM Watson Speech to Text API</h4>
+                <p>A web application of an AI interview chatbot. Users can speak to the chatbot and it will provide users with analytics and feedback for each response.</p>
+                <p>IBM Watson Speech to Text API is used to convert speech to text in real-time and the Azure Text Analytics API is used to provide analytics.</p>
+                <a href="https://github.com/katiezhan/restARant" target="_blank"><i class="fa fa-github"></i></a>
+              </div>
             </div>
           </div>
-        </a>
-      </div>
-      <div class="name">
-        <p>Audio Visualizer</p>
-      </div>
-    </div>
-    <div class="projectbox">
-      <div class="projtext">
-        <a href="HexClock/index.html" target="_blank">
-          <img src="hexcolor.jpg" alt="Hex Colour Clock" width="200" class="image">
-          <div class="overlay">
-            <div class="text">
-            <p>A web application of a precise hexadecimal colour clock that
-              goes the whole 24 hours colour range, from #000000 to #235959.
-            </p>
-            <i>HTML + CSS + Javascript</i>
+        </div>
+
+        <!-- Sorcery -->
+        <div class="projectBox">
+          <div class="projectImage">
+            <a href="#" onclick="openModal(5)">
+              <img src="img/sorcery.jpg">
+              <div class="overlay"></div>
+              <div class="overlayText fadeIn">
+                <h3>Sorcery</h3>
+                <p>C++</p>
+              </div>
+            </a>
+            <div class="modal" id="modal5">
+              <div class="close">
+                <a data-izimodal-close="">x</a>
+              </div>
+              <img src="img/sormod.jpg">
+              <div class="text">
+                <h2>Sorcery</h2>
+                <h4>C++</h4>
+                <p>A local two player card game similar to Hearthstone. Sorcery has a wide variety of cards, allowing for custom decks to be built. It also has both ASCII and XWindows graphics for a rich experience.</p>
+                <p>Email me for more information!</p>
+                <a href="mailto:rqzhan@uwaterloo.ca" target="_blank"><i class="fa fa-envelope-o"></i></a>
+              </div>
             </div>
           </div>
-        </a>
-      </div>
-      <p>Hex Clock</p>
-    </div>
-  </div>
-</div>
+        </div>
 
-<div class="bgimg-4" id="contact">
-   <div class="rect4">
-     <div class="contact">
-       <h5>Contact Me</h5>
-      <p>
-        <i class="fa fa-phone"></i>
-        <a href="tel:778-707-9288">(778) 707-9288</a>
-      </p>
-      <p>
-        <i class="fa fa-envelope-o"></i>
-        <a href="mailto:rqzhan@uwaterloo.ca" target="_blank">rqzhan@uwaterloo.ca</a>
-      </p>
-      <p>
-        <i class="fa fa-github"></i>
-        <a href="https://github.com/katiezhan" target="_blank">github.com/katiezhan</a>
-      </p>
-      <p>
-        <i class="fa fa-linkedin"></i>
-        <a href="https://linkedin.com/in/katiezhan" target="_blank">linkedin.com/in/katiezhan</a>
-      </p>
-      <p>
-        <i class="fa fa-home"></i>
-        Vancouver, B.C.
-      </p>
-    </div>
-   </div>
+        <!-- reSTARant -->
+        <div class="projectBox">
+          <div class="projectImage">
+            <a href="#" onclick="openModal(4)">
+              <img src="img/restarant.jpg">
+              <div class="overlay"></div>
+              <div class="overlayText fadeIn">
+                <h3>reSTARant</h3>
+                <p>React Native, Google Cloud Vision API, Google Places API</p>
+              </div>
+            </a>
+            <div class="modal" id="modal4">
+              <div class="close">
+                <a data-izimodal-close="">x</a>
+              </div>
+              <img src="img/resmod.jpg">
+              <div class="text">
+                <h2>reSTARant</h2>
+                <h4>React Native + Google Cloud Vision API + Google Places API</h4>
+                <p>A mobile app available on Android and iOS that allows users to take a photo of the restaurant sign and instantly get the reviews.</p>
+                <p>Google Cloud Vision API is used for OCR and Google Places API is used to ensure the reviews for the correct location are being returned.</p>
+                <a href="https://github.com/katiezhan/restARant" target="_blank"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Linear Regression Visualizer -->
+        <div class="projectBox">
+          <div class="projectImage">
+            <a href="#" onclick="openModal(3)">
+              <img src="img/linearReg.jpg">
+              <div class="overlay"></div>
+              <div class="overlayText fadeIn">
+                <h3>Linear Regression Visualizer</h3>
+                <p>HTML, Javascript, Processing 5</p>
+              </div>
+            </a>
+            <div class="modal" id="modal3">
+              <div class="close">
+                <a data-izimodal-close="">x</a>
+              </div>
+              <img src="img/linmod.jpg">
+              <div class="text">
+                <h2>Linear Regression Visualizer</h2>
+                <h4>HTML + JavaScript + Processing 5</h4>
+                <p>A tool that allows users to plot points on a graph and the line of best fit will be auto-generated. The line of best fit is calculated through linear regression. The visual interface is created through Processing 5.</p>
+                <a href="https://github.com/katiezhan/linearRegressionVisualizer" target="_blank"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+        <!-- Audio Visualizer -->
+        <div class="projectBox">
+          <div class="projectImage">
+            <a href="#" onclick="openModal(2)">
+              <img src="img/audio.jpg">
+              <div class="overlay"></div>
+              <div class="overlayText fadeIn">
+                <h3>Audio Visualizer</h3>
+                <p>HTML, CSS, Javascript</p>
+              </div>
+            </a>
+            <div class="modal" id="modal2">
+              <div class="close">
+                <a data-izimodal-close="">x</a>
+              </div>
+              <img src="img/audiomod.jpg">
+              <div class="text">
+                  <h2>Audio Visualizer</h2>
+                  <h4>HTML + CSS + JavaScript</h4>
+                  <p>A web application that creates captivating animations based on the audio input. Features 4 different animations and 2 different background choices.</p>
+                  <a href="https://github.com/katiezhan/audiovisualizer" target="_blank"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hex Clock -->
+        <div class="projectBox">
+          <div class="projectImage">
+            <a href="#" onclick="openModal(1)">
+              <img src="img/hexclock.jpg">
+              <div class="overlay"></div>
+              <div class="overlayText fadeIn">
+                <h3>Hex Clock</h3>
+                <p>HTML, CSS, Javascript</p>
+              </div>
+            </a>
+            <div class="modal" id="modal1">
+              <div class="close">
+                <a data-izimodal-close="">x</a>
+              </div>
+              <img src="img/hexmod.jpg">
+              <div class="text">
+                <h2>Hex Clock</h2>
+                <h4>HTML + CSS + JavaScript</h4>
+                <p>A web application of a precise hexidecimal colour clock. The background colour is based on the hex colour of the current computer time. It goes through the whole 24 hour colour range from #000 to #FFF.</p>
+                <a href="https://github.com/katiezhan/hexclock" target="_blank"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- More Coming Soon -->
+        <div class="projectBox">
+          <div class="projectImage">
+            <img src="img/more.jpg">
+            <div class="overlay"></div>
+            <div class="overlayText fadeIn">
+              <h3>More Coming Soon!</h3>
+            </div>
+          </div>
+        </div>
+
+        <div style="clear:both"></div>
+      </div>
+    </div> 
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js" type="text/javascript"></script>
   <script src="js/script.js"></script>
 
 </body>
 </html>
+
