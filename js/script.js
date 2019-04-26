@@ -1,5 +1,5 @@
 function start(numModal) {
-  alignHeader();
+  // alignHeader();
   loadModal(numModal);
 }
 
