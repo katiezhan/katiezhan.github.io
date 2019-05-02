@@ -239,16 +239,18 @@ a:hover {
     font-size: 300%;
     text-align: center;
     white-space: nowrap;
+    line-height: 50px;
     overflow: hidden;  
 }
 
 .typewriter {
   animation: typewriter 2.5s steps(44) 1s 1 normal both,
              blink 1s step-end infinite;
+  max-height: 38px;
 }
 @keyframes typewriter {
   from{width: 0;}
-  to{width: 4.7em;}
+  to{width: 4.9em;}
 }
 
 @keyframes blink {
