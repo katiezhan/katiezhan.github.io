@@ -246,7 +246,7 @@ a:hover {
 .typewriter {
   animation: typewriter 2.5s steps(44) 1s 1 normal both,
              blink 1s step-end infinite;
-  max-height: 38px;
+  max-height: 40px;
 }
 @keyframes typewriter {
   from{width: 0;}
